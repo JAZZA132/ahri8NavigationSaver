@@ -10,6 +10,7 @@
 // @grant		GM_getValue
 // @grant		GM_addStyle
 // @grant		GM_registerMenuCommand
+// @license      GPL-3.0
 // @version     1
 // ==/UserScript==
 
@@ -24,7 +25,7 @@
     let regex2 = /^https:\/\/ahri8\.top\/readOnline.*$/; // 匹配從漫畫頁到漫畫簡介
     let match = currentUrl.match(regex1);
     let match2 = referrerUrl.match(regex2);
-    
+
     let isButtonClicked = false;
     // 獲取按鈕元素
     let readButton = document.querySelector('a.apo.btn.btn-white.btn-default');
