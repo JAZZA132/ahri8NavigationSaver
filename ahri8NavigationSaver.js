@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name         ahri8NavigationSaver
 // @namespace    https://github.com/JAZZA132/ahri8NavigationSaver
+// @description         松鼠症倉庫擴充,免點選與紀錄頁數
 // @description:zh-TW   松鼠症倉庫擴充,免點選與紀錄頁數
 // @author       AaronWang
 // @match        https://ahri8.top/*
