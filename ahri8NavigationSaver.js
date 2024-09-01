@@ -1,8 +1,7 @@
 // ==UserScript==
 // @name         ahri8NavigationSaver
-// @namespace    http://tampermonkey.net/
-// @version      2024-09-01
-// @description  try to take over the world!
+// @namespace    https://github.com/JAZZA132/ahri8NavigationSaver
+// @description:zh-TW   松鼠症倉庫擴充,免點選與紀錄頁數
 // @author       AaronWang
 // @match        https://ahri8.top/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=ahri8.top
@@ -11,6 +10,7 @@
 // @grant		GM_getValue
 // @grant		GM_addStyle
 // @grant		GM_registerMenuCommand
+// @version     1
 // ==/UserScript==
 
 (function () {
@@ -24,7 +24,7 @@
     let regex2 = /^https:\/\/ahri8\.top\/readOnline.*$/; // 匹配從漫畫頁到漫畫簡介
     let match = currentUrl.match(regex1);
     let match2 = referrerUrl.match(regex2);
-
+    
     let isButtonClicked = false;
     // 獲取按鈕元素
     let readButton = document.querySelector('a.apo.btn.btn-white.btn-default');
